@@ -1,0 +1,17 @@
+package dev.com.nando;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class WordBeanFrequencyTests {
+
+	
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
