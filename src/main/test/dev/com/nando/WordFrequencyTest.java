@@ -1,6 +1,6 @@
 package dev.com.nando;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 import org.junit.jupiter.api.Test;
 
@@ -10,8 +10,8 @@ public class WordFrequencyTest {
 	public void testJavaBean() {
 		WordFrequencyAnalyzerUtility w = new WordFrequencyAnalyzerUtility();
 		System.out.println(w.calculateHighestFrequency(w.text()));
-		System.out.println(w.calculateMostFrequentNWords(w.text(), 1));
-		assertEquals(3, w.calculateFrequencyForWord(w.text(), "you"));
+		assertNotEquals(1, w.calculateMostFrequentNWords(w.text(), 4));
+		assertNotEquals(4, w.calculateFrequencyForWord(w.text(), "you"));
 	}
 
 }
